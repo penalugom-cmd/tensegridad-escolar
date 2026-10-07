@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c22">
+  <meta name="description" content="Explora la tensegridad: historia, tensión, compresión y aplicaciones. Un proyecto escolar interactivo sobre el arte del equilibrio.">
+  <title>Tensegridad — El arte del equilibrio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/hamaca-3d.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Tensegridad, inicio"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M6 27 17 5 30 27ZM6 27 27 10 30 27 9 12Z"/><path class="brand-bar" d="m9 12 21 15M17 5 6 27M27 10 17 30"/></svg><span>tensegridad<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-controls="nav-principal" aria-expanded="false"><span>Menú</span><span class="menu-icon" aria-hidden="true">☰</span></button>
+      <nav id="nav-principal" aria-label="Navegación principal">
+        <a href="#que-es">Concepto</a><a href="#historia">Historia</a><a href="#funcionamiento">Cómo funciona</a><a href="#aplicaciones">Aplicaciones</a><a href="#galeria">Galería</a><a class="nav-project" href="#hamaca">Nuestro proyecto <span aria-hidden="true">↗</span></a>
+        <a class="mobile-extra" href="#fuerzas">Tensión y compresión</a><a class="mobile-extra" href="#ventajas">Ventajas y desventajas</a><a class="mobile-extra" href="#fuentes">Fuentes</a>
+      </nav>
+    </div>
+    <div class="reading-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> FÍSICA, DISEÑO Y UN POCO DE ASOMBRO</p>
+          <h1 id="hero-title">El arte de<br>sostener lo<br><em>imposible.</em></h1>
+          <p class="hero-description">Barras que parecen flotar. Cables que lo conectan todo. Descubre el equilibrio invisible de la <strong>tensegridad</strong>.</p>
+          <div class="hero-actions"><a class="button button-coral" href="#que-es">Explorar el principio <span aria-hidden="true">↗</span></a><a class="text-link" href="#funcionamiento">Ver cómo funciona <span aria-hidden="true">↓</span></a></div>
+          <p class="hero-footnote">UN RECORRIDO INTERACTIVO · PROYECTO ESCOLAR</p>
+        </div>
+        <figure class="hero-model">
+          <div class="model-topline"><span>ESTUDIO DE EQUILIBRIO / 01</span><span class="tiny-cross" aria-hidden="true">+</span></div>
+          <div class="model-stage">
+            <div class="model-orbit" aria-hidden="true"></div>
+            <svg class="tensegrity-model hero-svg" data-model="hero" viewBox="0 0 600 500" role="img" aria-label="Representación giratoria de un prisma de tensegridad: tres barras separadas conectadas por nueve cables"><image href="assets/prisma.svg" width="600" height="500"/></svg>
+            <span class="model-label label-tension"><i></i> Tensión</span><span class="model-label label-compression"><i></i> Compresión</span>
+            <button type="button" id="rotation-toggle" class="rotation-toggle js-only" aria-pressed="true" aria-label="Pausar giro del modelo"><span aria-hidden="true">Ⅱ</span></button>
+          </div>
+          <figcaption><span>Conectados, encontramos el equilibrio.</span><span class="figure-number">FIG. 01</span></figcaption>
+          <p class="model-note">Representación conceptual; no es una simulación estructural.</p>
+        </figure>
+      </div>
+      <div class="container hero-bottom"><span>LA CIENCIA DETRÁS DE LO QUE PARECE MAGIA</span><a href="#que-es" aria-label="Continuar a qué es la tensegridad">DESLIZA PARA DESCUBRIR <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="section concept-section" id="que-es" aria-labelledby="concept-title">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow dark-eyebrow">01 / EL CONCEPTO</p><h2 id="concept-title">Todo depende de<br><em>cómo se conecta.</em></h2><p>La tensegridad combina elementos rígidos que se comprimen con una red de elementos flexibles que se tensan. Juntos mantienen una forma estable.</p></div>
+        <div class="concept-grid">
+          <div class="concept-definition reveal"><span class="word-break">tensión <span>+</span> integridad</span><div class="definition-rule"></div><p>En la tensegridad clásica, las barras no se tocan entre sí: quedan conectadas por una red continua de cables tensados. La forma y la tensión inicial son parte esencial del equilibrio.</p><p class="source-note">El nombre deriva del inglés <i lang="en">tensional integrity</i>. <a href="#fuente-bfi">[1]</a></p></div>
+          <div class="principle-list">
+            <article class="principle reveal"><span class="principle-number">01</span><div><h3>Elementos que empujan</h3><p>Las barras resisten fuerzas que tienden a acortarlas.</p></div><span class="principle-symbol" aria-hidden="true">→←</span></article>
+            <article class="principle reveal"><span class="principle-number">02</span><div><h3>Elementos que tiran</h3><p>Los cables transmiten fuerzas que tienden a estirarlos.</p></div><span class="principle-symbol coral-text" aria-hidden="true">←→</span></article>
+            <article class="principle reveal"><span class="principle-number">03</span><div><h3>Un sistema en equilibrio</h3><p>La disposición de las conexiones permite que las fuerzas se compensen.</p></div><span class="principle-symbol" aria-hidden="true">⇌</span></article>
+          </div>
+        </div>
+        <aside class="concept-note reveal"><span class="note-icon" aria-hidden="true">i</span><p><strong>No es levitación.</strong> Los cables pueden pasar desapercibidos, pero sí transmiten fuerzas. La gravedad sigue actuando.</p></aside>
+      </div>
+    </section>
+
+    <section class="section history-section" id="historia" aria-labelledby="history-title">
+      <div class="container"><div class="section-heading horizontal reveal"><div><p class="eyebrow dark-eyebrow">02 / UNA IDEA CON HISTORIA</p><h2 id="history-title">Del arte a la<br><em>exploración espacial.</em></h2></div><p>Una conversación entre escultura, geometría e ingeniería que sigue abriendo posibilidades.</p></div>
+        <ol class="timeline">
+          <li class="reveal"><span class="timeline-dot"></span><span class="timeline-year">1948</span><h3>El encuentro</h3><p>Kenneth Snelson y Buckminster Fuller coinciden en Black Mountain College. Snelson desarrolla sus primeras exploraciones con elementos separados unidos por hilos. <a href="#fuente-bfi">[1]</a></p></li>
+          <li class="reveal"><span class="timeline-dot"></span><span class="timeline-year">1955</span><h3>Un nombre para la idea</h3><p>Fuller acuña el término <i lang="en">tensegrity</i>, según la cronología del Buckminster Fuller Institute. <a href="#fuente-bfi">[1]</a></p></li>
+          <li class="reveal"><span class="timeline-dot"></span><span class="timeline-year">1968</span><h3>La escultura crece</h3><p>Snelson crea <i lang="en">Needle Tower</i>, una obra de aluminio y acero inoxidable que forma parte de la colección del Hirshhorn. <a href="#fuente-museo">[2]</a></p></li>
+          <li class="reveal"><span class="timeline-dot"></span><span class="timeline-year">2010s</span><h3>Nuevas formas de moverse</h3><p>El proyecto experimental SUPERball de NASA Ames estudia robots con barras y cables para explorar nuevas formas de aterrizaje y locomoción. <a href="#fuente-nasa">[3]</a></p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section lab-section" id="funcionamiento" aria-labelledby="lab-title">
+      <div class="container"><div class="section-heading horizontal reveal"><div><p class="eyebrow">03 / LABORATORIO VISUAL</p><h2 id="lab-title">Dos fuerzas.<br><em>Un solo equilibrio.</em></h2></div><p>Cambia la vista para reconocer las partes. El modelo conserva su geometría: los controles solo resaltan sus elementos.</p></div>
+        <div class="lab-grid reveal">
+          <div class="lab-visual">
+            <div class="lab-visual-header"><span>PRISMA DE TRES BARRAS</span><span class="pill">INTERACTIVO</span></div>
+            <svg class="tensegrity-model lab-svg" data-model="lab" viewBox="0 0 600 500" role="img" aria-label="Prisma de tensegridad con cables y barras diferenciados"><image href="assets/prisma.svg" width="600" height="500"/></svg>
+            <div class="angle-control js-only"><label for="view-angle">Girar la vista</label><input type="range" min="0" max="360" value="25" id="view-angle" aria-describedby="angle-help"><span id="angle-value">25°</span><button type="button" id="lab-rotation-toggle" class="view-button" aria-pressed="true" aria-label="Pausar giro del prisma">Pausar giro</button></div>
+            <p class="model-note" id="angle-help">Esquema didáctico. Sin cálculos de fuerzas ni capacidad de carga.</p>
+          </div>
+          <div class="lab-controls">
+            <div class="view-options js-only" role="group" aria-label="Elementos que se resaltan en el modelo"><button class="view-button active" data-view="all" aria-pressed="true">Todo</button><button class="view-button" data-view="tension" aria-pressed="false">Cables</button><button class="view-button" data-view="compression" aria-pressed="false">Barras</button></div>
+            <div class="lab-explanation" aria-live="polite" aria-atomic="true"><p class="eyebrow" id="lab-kicker">EL SISTEMA COMPLETO</p><h3 id="lab-subtitle">Cada parte cuenta.</h3><p id="lab-text">Las barras mantienen separados los puntos de unión, mientras los cables restringen sus movimientos. El equilibrio depende de la geometría y de la tensión inicial de la red.</p></div>
+            <ol class="steps"><li><span>1</span><p><strong>Geometría</strong>La posición de cada unión define cómo se conectan las piezas.</p></li><li><span>2</span><p><strong>Pretensión</strong>La red ya tiene tensión antes de añadir una carga externa.</p></li><li><span>3</span><p><strong>Equilibrio y estabilidad</strong>Las fuerzas se compensan; la estabilidad también depende de la respuesta ante perturbaciones.</p></li></ol>
+            <p class="source-note">Fundamento: estudio de estructuras de tensegridad. <a href="#fuente-estudio">[4]</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section forces-section" id="fuerzas" aria-labelledby="forces-title">
+      <div class="container"><div class="section-heading reveal"><p class="eyebrow dark-eyebrow">04 / ENTENDER LAS FUERZAS</p><h2 id="forces-title">Tirar no es lo mismo<br>que <em>comprimir.</em></h2></div>
+        <div class="force-cards">
+          <article class="force-card tension-card reveal"><span class="card-index">A / TENSIÓN</span><div class="force-diagram tension-diagram" aria-hidden="true"><span>←</span><i></i><span>→</span></div><h3>La fuerza que estira.</h3><p>Aparece cuando los extremos de un elemento reciben fuerzas que tienden a separarlos. En el modelo, la transmiten los cables.</p><p class="force-example"><strong>Imagínalo:</strong> una cuerda estirada entre tus manos.</p><span class="force-tag">ELEMENTO FLEXIBLE · CABLE</span></article>
+          <article class="force-card compression-card reveal"><span class="card-index">B / COMPRESIÓN</span><div class="force-diagram compression-diagram" aria-hidden="true"><span>→</span><i></i><span>←</span></div><h3>La fuerza que comprime.</h3><p>Aparece cuando las fuerzas tienden a acercar los extremos de un elemento. En el modelo, las barras trabajan principalmente a compresión.</p><p class="force-example"><strong>Imagínalo:</strong> un resorte que aprietas entre las manos.</p><span class="force-tag">ELEMENTO RÍGIDO · BARRA</span></article>
+        </div>
+        <p class="below-note reveal">Un cable flexible puede tirar, pero no sostener un empuje longitudinal sin aflojarse o cambiar de forma. Las barras también pueden deformarse; ningún material es infinitamente rígido.</p>
+      </div>
+    </section>
+
+    <section class="section applications-section" id="aplicaciones" aria-labelledby="applications-title">
+      <div class="container"><div class="section-heading horizontal reveal"><div><p class="eyebrow dark-eyebrow">05 / DE LA IDEA AL MUNDO</p><h2 id="applications-title">Una forma distinta<br>de <em>construir ideas.</em></h2></div><p>La tensegridad aparece en obras artísticas y proyectos de investigación. También inspira modelos para aprender.</p></div>
+        <div class="application-grid">
+          <article class="application-card reveal"><div class="app-icon" aria-hidden="true">✳</div><span class="card-index">01 / ARTE</span><h3>Esculturas que sorprenden</h3><p>En <i lang="en">Needle Tower</i>, de Snelson, la relación entre barras y cables transforma el espacio en una obra de arte. <a href="#fuente-museo">[2]</a></p><a class="card-link" href="https://hirshhorn.si.edu/collection/artwork/?edanUrl=edanmdm%3Ahmsg_74.4" target="_blank" rel="noopener noreferrer">Conocer la obra <span aria-hidden="true">↗</span><span class="sr-only"> (abre una pestaña nueva)</span></a></article>
+          <article class="application-card featured-card reveal"><div class="app-icon" aria-hidden="true">◎</div><span class="card-index">02 / ROBÓTICA</span><h3>Robots que cambian de forma</h3><p>SUPERball investiga una estructura deformable de barras y cables. Modificar sus tensiones permite explorar nuevas formas de movimiento. <a href="#fuente-nasa">[3]</a></p><a class="card-link" href="https://www.nasa.gov/technology/tech-transfer-spinoffs/nasa-developed-spherical-robots-to-the-rescue/" target="_blank" rel="noopener noreferrer">Explorar en NASA <span aria-hidden="true">↗</span><span class="sr-only"> (abre una pestaña nueva)</span></a></article>
+          <article class="application-card reveal"><div class="app-icon" aria-hidden="true">⌘</div><span class="card-index">03 / DISEÑO Y EDUCACIÓN</span><h3>Pensar con estructuras</h3><p>Los modelos de aula ayudan a visualizar fuerzas, conexiones y equilibrio. El principio también se estudia en ingeniería estructural. <a href="#fuente-estudio">[4]</a></p><a class="card-link" href="#hamaca">Ver nuestro concepto <span aria-hidden="true">↗</span></a></article>
+        </div>
+        <aside class="concept-note reveal"><span class="note-icon" aria-hidden="true">i</span><p><strong>Una diferencia importante:</strong> no toda estructura con cables es una tensegridad clásica. Un puente colgante o una mesa que parece flotar puede tener otro sistema estructural.</p></aside>
+      </div>
+    </section>
+
+    <section class="section balance-section" id="ventajas" aria-labelledby="balance-title">
+      <div class="container"><div class="section-heading reveal"><p class="eyebrow dark-eyebrow">06 / MIRADA CRÍTICA</p><h2 id="balance-title">Tan interesante como<br><em>exigente.</em></h2><p>Las ventajas dependen del diseño, los materiales y el uso. Una apariencia ligera no garantiza resistencia.</p></div>
+        <div class="balance-grid"><article class="balance-column reveal"><h3><span aria-hidden="true">+</span> Ventajas potenciales</h3><ul><li><strong>Ligereza</strong>Una disposición eficiente puede reducir material en determinadas aplicaciones.</li><li><strong>Respuesta global</strong>Las conexiones hacen que una acción local influya en el conjunto.</li><li><strong>Adaptabilidad</strong>Algunos sistemas pueden cambiar de forma al modificar sus cables.</li><li><strong>Valor educativo y visual</strong>Hacen visibles relaciones entre geometría, fuerzas y equilibrio.</li></ul></article><article class="balance-column reveal"><h3><span aria-hidden="true">−</span> Desventajas y límites</h3><ul><li><strong>Diseño complejo</strong>Requieren estudiar la forma, la pretensión y la estabilidad.</li><li><strong>Sensibilidad al ajuste</strong>Un cable flojo o una unión desplazada puede cambiar el comportamiento.</li><li><strong>Deformación y mantenimiento</strong>Los materiales y conexiones necesitan revisión según su uso.</li><li><strong>Capacidad específica</strong>Un modelo de aula no demuestra que una versión grande soporte personas.</li></ul></article></div>
+      </div>
+    </section>
+
+    <section class="section hammock-section" id="hamaca" aria-labelledby="hammock-title">
+      <div class="container hammock-grid">
+        <div class="hammock-copy reveal"><p class="eyebrow">07 / NUESTRO PROYECTO</p><h2 id="hammock-title">Nuestro plano,<br><em>en otra dimensión.</em></h2><span class="project-status"><span></span> HAMACA · PLANO Y VISTA 3D</span><p>El plano del proyecto reúne cuatro vistas de la hamaca: frontal, lateral, superior e isométrica. Aquí puedes consultar sus medidas en metros y explorar una representación tridimensional.</p><p>Observa la tela suspendida, las barras del soporte y los tensores. El modelo permite reconocer su posición y sus conexiones desde distintos ángulos.</p><a class="text-link" href="#modelo-hamaca">Explorar la hamaca en 3D <span aria-hidden="true">↗</span></a></div>
+        <div class="project-measurements reveal"><p class="eyebrow dark-eyebrow">LAS MEDIDAS DEL PLANO</p><h3>Ahora, en metros.</h3><table class="measurements-table"><caption>Conversión de milímetros a metros</caption><thead><tr><th scope="col">Medida</th><th scope="col">Milímetros</th><th scope="col">Metros</th></tr></thead><tbody><tr><th scope="row">Largo</th><td>2250 mm</td><td>2,25 m</td></tr><tr><th scope="row">Ancho</th><td>1200 mm</td><td>1,20 m</td></tr><tr><th scope="row">Alto</th><td>1350 mm</td><td>1,35 m</td></tr><tr><th scope="row">Diámetro del tubo</th><td>32 mm</td><td>0,032 m</td></tr><tr><th scope="row">Espesor del tubo</th><td>1,5 mm</td><td>0,0015 m</td></tr></tbody></table><p class="conversion-rule">1 metro = 1000 milímetros · mm ÷ 1000 = m</p></div>
+        <div class="hammock-viewer reveal" id="modelo-hamaca"><div class="viewer-toolbar"><div><span class="viewer-kicker">MODELO DEL PROYECTO</span><h3>Hamaca en 3D</h3></div><span class="viewer-badge">VISTA INTERACTIVA</span></div><div class="viewer-stage"><canvas id="hammock-canvas" width="1000" height="550" tabindex="0" role="img" aria-label="Modelo tridimensional de una hamaca con soporte cruzado y tensores. Arrastra para girar; usa las flechas del teclado o los botones de vista." aria-describedby="hammock-help">Modelo 3D de la hamaca. Puedes consultar sus cuatro vistas en el plano de referencia que aparece debajo.</canvas><span class="viewer-hint" id="hammock-help">Arrastra para girar · Flechas del teclado para ajustar la vista</span><span class="viewer-caption">REPRESENTACIÓN VISUAL · MEDIDAS GENERALES EN METROS</span></div><div class="viewer-bottom"><div class="hammock-view-options" role="group" aria-label="Vistas de la hamaca"><button type="button" data-hammock-view="iso" class="selected" aria-pressed="true">Isométrica</button><button type="button" data-hammock-view="front" aria-pressed="false">Frontal</button><button type="button" data-hammock-view="side" aria-pressed="false">Lateral</button><button type="button" data-hammock-view="top" aria-pressed="false">Superior</button></div><div class="hammock-camera"><label for="hammock-zoom">Acercar</label><input id="hammock-zoom" type="range" min="75" max="140" value="100" aria-label="Acercar modelo de hamaca"><button type="button" id="hammock-spin" aria-pressed="false">Giro automático</button></div></div><div class="viewer-legend"><span><i class="legend-frame"></i> Soporte rígido</span><span><i class="legend-cables"></i> Cables y cuerdas</span><span><i class="legend-fabric"></i> Tela de la hamaca</span></div><noscript><p class="canvas-fallback">Activa JavaScript para explorar el modelo 3D. El plano y las medidas en metros están disponibles debajo.</p></noscript></div>
+        <details class="project-board project-plan reveal" id="panel-planos"><summary><span>Ver plano en metros</span><span class="plan-summary-note">4 VISTAS <i aria-hidden="true">+</i></span></summary><div class="plan-content"><a href="assets/plano-hamaca-metros.png" class="gallery-open plan-open" data-title="Plano de la hamaca en metros" data-caption="Plano aportado para el proyecto escolar, con todas sus cotas convertidas de milímetros a metros. Largo: 2,25 m; ancho: 1,20 m; alto: 1,35 m; diámetro del tubo: 0,032 m; espesor: 0,0015 m. Referencia visual sin validación estructural."><img src="assets/plano-hamaca-metros.png" width="1672" height="941" loading="lazy" alt="Plano de la hamaca con vistas frontal, lateral, superior e isométrica y cotas en metros: largo 2,25 m, ancho 1,20 m, alto 1,35 m, diámetro del tubo 0,032 m y espesor 0,0015 m"><span class="expand-icon" aria-hidden="true">↗</span><span class="sr-only">Ampliar plano de la hamaca</span></a><p class="project-caption">Plano del proyecto con todas las cotas expresadas en metros, tanto en las vistas como en las especificaciones del tubo.</p></div></details>
+        <aside class="project-scope reveal"><span class="scope-icon" aria-hidden="true">↳</span><p><strong>Referencia educativa.</strong> El 3D interpreta las vistas y las dimensiones generales del dibujo. El plano y sus cifras de carga no cuentan aquí con validación estructural para sostener personas.</p></aside>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria" aria-labelledby="gallery-title">
+      <div class="container"><div class="section-heading horizontal reveal"><div><p class="eyebrow dark-eyebrow">08 / GALERÍA DE IDEAS</p><h2 id="gallery-title">Mira más de cerca.</h2></div><p>Esquemas originales para observar las conexiones. Selecciona una imagen para ampliarla.</p></div>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal"><a href="assets/prisma.svg" class="gallery-open" data-caption="Prisma de tres barras. Los elementos rígidos permanecen separados y conectados por cables. Esquema conceptual, sin escala ni cálculo estructural." data-title="El módulo básico"><img src="assets/prisma.svg" width="680" height="500" loading="lazy" alt="Esquema de prisma con tres barras y nueve cables"><span class="expand-icon" aria-hidden="true">↗</span><span class="sr-only">Ampliar el módulo básico</span></a><figcaption><span>FIG. 01 / CONEXIONES</span><h3>El módulo básico</h3></figcaption></figure>
+          <figure class="gallery-item reveal"><a href="assets/torre.svg" class="gallery-open" data-caption="Estudio visual de módulos dispuestos en altura. Ilustración conceptual: no reproduce Needle Tower ni representa un diseño estructural verificado." data-title="Geometría en altura"><img src="assets/torre.svg" width="680" height="500" loading="lazy" alt="Estudio visual de varios módulos superpuestos en una torre"><span class="expand-icon" aria-hidden="true">↗</span><span class="sr-only">Ampliar geometría en altura</span></a><figcaption><span>FIG. 02 / REPETICIÓN</span><h3>Geometría en altura</h3></figcaption></figure>
+          <figure class="gallery-item reveal"><a href="assets/red.svg" class="gallery-open" data-caption="Vista superior del módulo: una perspectiva distinta permite descubrir las conexiones entre sus seis nodos. Ilustración didáctica, no plano de construcción." data-title="Otra perspectiva"><img src="assets/red.svg" width="680" height="500" loading="lazy" alt="Vista superior de una red de cables que conecta barras separadas"><span class="expand-icon" aria-hidden="true">↗</span><span class="sr-only">Ampliar otra perspectiva</span></a><figcaption><span>FIG. 03 / PERSPECTIVA</span><h3>Otra perspectiva</h3></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-section js-only" aria-labelledby="quiz-title"><div class="container quiz-inner"><div><p class="eyebrow dark-eyebrow">ANTES DE SEGUIR…</p><h2 id="quiz-title">Pon a prueba tu intuición.</h2><p>En este modelo de tensegridad, ¿qué elementos trabajan principalmente a tensión?</p></div><div class="quiz-interaction"><div class="quiz-options" role="group" aria-label="Elige tu respuesta"><button type="button" data-answer="bars">Las barras</button><button type="button" data-answer="cables">Los cables</button><button type="button" data-answer="none">Ninguno</button></div><p id="quiz-feedback" aria-live="polite">Selecciona una respuesta.</p></div></div></section>
+
+    <section class="section sources-section" id="fuentes" aria-labelledby="sources-title"><div class="container"><div class="section-heading horizontal reveal"><div><p class="eyebrow dark-eyebrow">09 / SEGUIR APRENDIENDO</p><h2 id="sources-title">Las ideas tienen<br><em>sus fuentes.</em></h2></div><p>Referencias para contrastar conceptos y profundizar. Los enlaces externos se abren en una pestaña nueva.</p></div><ol class="source-list">
+      <li id="fuente-bfi"><span class="source-number">01</span><div><h3>Buckminster Fuller Institute</h3><p><i lang="en">Tensegrity.</i> Definición, origen del término y encuentro entre Fuller y Snelson.</p></div><a href="https://www.bfi.org/about-fuller/big-ideas/tensegrity/" target="_blank" rel="noopener noreferrer" aria-label="Consultar Tensegrity del Buckminster Fuller Institute, nueva pestaña">Consultar <span aria-hidden="true">↗</span></a></li>
+      <li id="fuente-museo"><span class="source-number">02</span><div><h3>Hirshhorn Museum · Smithsonian</h3><p><i lang="en">Needle Tower.</i> Ficha de la obra de Kenneth Snelson, fechada en 1968.</p></div><a href="https://hirshhorn.si.edu/collection/artwork/?edanUrl=edanmdm%3Ahmsg_74.4" target="_blank" rel="noopener noreferrer" aria-label="Consultar Needle Tower del Smithsonian, nueva pestaña">Consultar <span aria-hidden="true">↗</span></a></li>
+      <li id="fuente-nasa"><span class="source-number">03</span><div><h3>NASA</h3><p><i lang="en">NASA-Developed Spherical Robots to the Rescue.</i> Investigación y aplicaciones de robots de tensegridad.</p></div><a href="https://www.nasa.gov/technology/tech-transfer-spinoffs/nasa-developed-spherical-robots-to-the-rescue/" target="_blank" rel="noopener noreferrer" aria-label="Consultar robots de tensegridad de NASA, nueva pestaña">Consultar <span aria-hidden="true">↗</span></a></li>
+      <li id="fuente-estudio"><span class="source-number">04</span><div><h3>Investigación · Princeton University</h3><p>Nabet, B. y Leonard, N. E. (2006). <i lang="en">Shape Control of a Multi-Agent System Using Tensegrity Structures.</i> Modelos de tensegridad y control de formas (PDF en inglés).</p></div><a href="https://naomi.princeton.edu/wp-content/uploads/sites/744/2021/03/ifac06final.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consultar estudio sobre tensegridad, PDF en una pestaña nueva">Leer PDF <span aria-hidden="true">↗</span></a></li>
+    </ol><p class="sources-date">Fuentes consultadas en octubre de 2026. Textos adaptados con fines educativos. Ilustraciones conceptuales propias; plano de hamaca proporcionado para el proyecto.</p></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-top"><a class="brand" href="#inicio">tensegridad<span class="brand-dot">.</span></a><p>La fuerza está en las conexiones.</p><a class="back-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a></div><nav class="footer-nav" aria-label="Todas las secciones"><a href="#inicio">Inicio</a><a href="#que-es">Qué es</a><a href="#historia">Historia</a><a href="#funcionamiento">Cómo funciona</a><a href="#fuerzas">Tensión y compresión</a><a href="#aplicaciones">Aplicaciones</a><a href="#ventajas">Ventajas y desventajas</a><a href="#hamaca">Proyecto de hamaca</a><a href="#galeria">Galería</a><a href="#fuentes">Fuentes</a></nav><div class="footer-bottom"><span>PROYECTO ESCOLAR / FÍSICA + DISEÑO</span><span>Hecho para aprender, observar y preguntar.</span></div></div></footer>
+  <dialog id="gallery-dialog" aria-labelledby="gallery-dialog-title" aria-describedby="gallery-dialog-caption"><div class="dialog-toolbar"><span>GALERÍA / ESTUDIO VISUAL</span><button type="button" id="close-gallery" aria-label="Cerrar imagen ampliada">✕</button></div><img id="gallery-dialog-image" src="assets/prisma.svg" alt=""><div class="dialog-copy"><h2 id="gallery-dialog-title">El módulo básico</h2><p id="gallery-dialog-caption"></p></div></dialog>
+</body>
+</html>

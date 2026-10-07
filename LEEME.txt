@@ -1,0 +1,55 @@
+TENSEGRIDAD — EL ARTE DEL EQUILIBRIO
+Proyecto escolar en español
+
+ABRIR LA PÁGINA
+Haz doble clic en index.html. Se abrirá en tu navegador.
+No necesitas instalar programas. La página, las ilustraciones y las
+interacciones funcionan sin Internet. Los enlaces a las fuentes sí
+requieren conexión.
+
+ARCHIVOS
+index.html                 Contenidos y secciones.
+css/estilos.css             Diseño y adaptación a móvil, tableta y escritorio.
+js/script.js               Menú, modelo geométrico, galería y cuestionario.
+js/hamaca-3d.js             Modelo 3D de la hamaca: giro, zoom y cuatro vistas.
+assets/favicon.svg         Icono de la página.
+assets/prisma.svg          Esquema del prisma.
+assets/torre.svg           Estudio visual de módulos en altura.
+assets/red.svg             Vista superior del módulo.
+assets/hamaca-concepto.svg  Ilustración conceptual de la hamaca.
+assets/plano-hamaca-original.png  Plano de referencia aportado para el proyecto.
+assets/plano-hamaca-metros.png    Plano mostrado en la web, con cotas en metros.
+
+Conserva la estructura de carpetas para que carguen todos los recursos.
+
+SECCIONES
+Inicio, Qué es la tensegridad, Historia, Cómo funciona, Tensión y
+compresión, Aplicaciones, Ventajas y desventajas, Proyecto de hamaca,
+Galería y Fuentes. También incluye una pregunta interactiva de repaso.
+
+PLANO Y MODELO 3D DE LA HAMACA
+La sección con id="hamaca" incluye el plano recibido y sus medidas
+convertidas a metros: largo 2,25 m, ancho 1,20 m, alto 1,35 m,
+diámetro del tubo 0,032 m y espesor del tubo 0,0015 m.
+La imagen mostrada en la web tiene todas las cotas en metros y se puede
+ampliar. La referencia original en milímetros se conserva en assets/.
+El modelo 3D interpreta las vistas y dimensiones generales del plano.
+Puedes arrastrarlo para girar, usar las flechas del teclado, elegir las
+vistas frontal, lateral, superior e isométrica y ajustar el acercamiento.
+Los modelos 3D giran automáticamente y despacio: aproximadamente una
+vuelta cada tres minutos. Cada modelo permite pausar y reanudar el giro.
+Al ajustar una vista manualmente, el giro se pausa para facilitar la
+observación. Se respeta la preferencia de movimiento reducido del sistema.
+
+ALCANCE EDUCATIVO
+El modelo permite observar conexiones y girar la vista. No calcula
+fuerzas, deformaciones ni capacidad de carga. Las medidas reproducen la
+referencia aportada. El modelo y las cifras de carga del plano no cuentan
+aquí con una validación estructural para sostener personas.
+
+REFERENCIAS
+La sección Fuentes incluye enlaces al Buckminster Fuller Institute,
+Hirshhorn Museum / Smithsonian, NASA y un artículo académico de
+Benjamin Nabet y Naomi Ehrich Leonard (Princeton University, 2006).
+Las ilustraciones son originales y conceptuales. El plano de la hamaca
+fue proporcionado para el proyecto escolar.
